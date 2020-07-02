@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/rich-text/rich-text",
+    "pages/list/list",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Demo",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 100
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

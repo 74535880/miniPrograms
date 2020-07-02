@@ -1,0 +1,44 @@
+<view class="wrapper">
+    <!-- 导航栏 -->
+    <view class="nav-list">
+        <scroll-view scroll-into-view="{{isNowId}}" enable-flex class="nav-scroll" scroll-x>
+            <view data-index="{{index}}" bind:tap="changePage" id="{{'id'+index}}" class="{{isNowId==index?'active-item':'nav-item'}}" wx:for="{{contentList}}" wx:key="index">
+                <text class="content">{{item}}</text>
+            </view>
+        </scroll-view>
+    </view>
+    <!-- 轮播图 -->
+    <view class="banner">
+        <swiper class="img-list" autoplay="{{isAutoPlay}}" bind:touchstart="stopPlay" bind:touchend="startPlay" duration="300" circular interval="1000" indicator-active-color="#f40" indicator-dots indicator-color="rgba(0,140,140,1)">
+            <swiper-item class="img-item">
+                <image class="img" src="https://static.veer.com/veer/static/resources/keyword/2020-02-19/b94a42fb11d64052ae5a9baa25f5370c.jpg" mode="scaleToFill" lazy-load="true" bindload="getImage"></image>
+            </swiper-item>
+            <swiper-item class="img-item">
+                <image class="img" src="https://pic.qqtn.com/up/2019-9/15690311636958128.jpg" mode="scaleToFill" lazy-load="true" bindload="getImage"></image>
+            </swiper-item>
+            <swiper-item class="img-item">
+                <image class="img" src="https://pic1.zhimg.com/v2-3b4fc7e3a1195a081d0259246c38debc_b.jpg" mode="scaleToFill" lazy-load="true" bindload="getImage"></image>
+            </swiper-item>
+            <swiper-item class="img-item">
+                <image class="img" src="https://lh3.googleusercontent.com/proxy/irls6JKYGhiBlX4L67rR8K_oqlD0zPNRnsr19U3drordeC-luoM_sDL5I54-3-K7rkTztL7OMkMfaWkIscbVe-iaxTt4CY8JD9_DKNtwqCYaJziZ" mode="scaleToFill" lazy-load="true" bindload="getImage"></image>
+            </swiper-item>
+        </swiper>
+    </view>
+    <!-- 页面的展示 -->
+    <view class="img-article-list">
+        <view class="img-article" wx:for="{{articleNumbers}}" wx:key="index">
+            <view class="img-wrapper">
+                <image class="img" mode="scaleToFill" src="https://img95.699pic.com/photo/40011/0709.jpg_wh860.jpg"></image>
+            </view>
+            <view class="article-content">
+                <text class="title">惊！！广州浮现僵尸!!!!</text>
+                <text class="article">圣诞节收到回复肯定会疯狂觉得很舒服跨境电商分类考试的火力发电还是咖啡杯丹江口市不妨多考虑是否对客户反馈好</text>
+                <text class="time">2020-07-01</text>
+            </view>
+        </view>
+        <!-- 显示更多 -->
+        <view bind:tap="getMoreNews" class="getMoreNews" hover-class="get-more">
+            <text>查看更多的信息 {{newsNumbers>=99?'(99+)':newsNumbers }}</text>
+        </view>
+    </view>
+</view>

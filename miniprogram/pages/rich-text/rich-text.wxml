@@ -1,0 +1,9 @@
+<!-- 这个是富文本框，可以加载html的一个内容框 -->
+<view>
+    <view>rich-text富文本控件 nodes=String</view>
+    <rich-text class="" nodes="{{richString}}"></rich-text>
+</view>
+<view>
+    <view>rich-text富文本控件 nodes=数据绑定的数组形式</view>
+    <rich-text nodes="{{nodesArray}}"></rich-text>
+</view>
