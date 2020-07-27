@@ -1,9 +1,0 @@
-<view class="container">
-    <view class="page-section">
-        <text class="page-section-title">填写提交工单</text>
-        <form bindsubmit="onsubmit" class="form-submit" bindreset="onreset">
-            <input type="text" value="{{inputval}}" />
-            <button type="primary" form-type="submit" class="btn-submit">submit</button>
-        </form>
-    </view>
-</view>

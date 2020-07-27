@@ -1,3 +1,0 @@
-<input bindblur="bindBlur"  type="text" />
-<button bind:tap="isCanUse">functionString</button>
-{{canUse}}

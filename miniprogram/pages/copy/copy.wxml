@@ -1,6 +1,0 @@
-<view class="copy">{{detail}}</view>
-
-<button bind:tap="copy">一键复制</button>
-
-
-<input bindblur="blur" type="text" value="val" />

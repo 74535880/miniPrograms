@@ -1,6 +1,2 @@
-<!-- index.wxml -->
-<view class="wrapper">{{storageInputVal}}</view>
-<view class="" hover-class="none" hover-stop-propagation="false">{{otherStorage}}</view>
-<view>
-  <text>{{a}}</text>
-</view>
+<!--pages/index/index.wxml-->
+<text>pages/index/index.wxml</text>

@@ -1,6 +1,0 @@
-<view>
-    <!-- bindmarkettap是点击标记才会触发的事件 -->
-    <map markers="{{markers}}" id="my-map" latitude="30.281" longitude="114.258" show-compass scale="16" polygons="{{polygons}}" bindmarkertap="markettap">
-        <image class="img" src="https://img.tukuppt.com/png_preview/00/42/51/sxfedHX6ar.jpg!/fw/780" mode="widthFix" lazy-load></image>
-    </map>
-</view>

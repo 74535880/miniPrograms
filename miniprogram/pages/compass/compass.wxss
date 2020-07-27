@@ -1,5 +1,0 @@
-/* pages/compass/compass.wxss */
-.container {
-  height: 100%;
-  color: #fff;
-}

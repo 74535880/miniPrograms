@@ -1,73 +1,10 @@
 {
-  "pages": [
-    "pages/scrollTo/scrollTo",
-    "pages/all-form/all-form",
-    "pages/sworder/sworder",
-    "pages/workOrder/workOrder",
-    "pages/capturescreen/capturescreen",
-    "pages/QRcode/QRcode",
-    "pages/detail/detail",
-    "pages/logs/logs",
-    "pages/code/code",
-    "pages/scancode/scancode",
-    "pages/copy/copy",
-    "pages/compass/compass",
-    "pages/storage/storage",
-    "pages/files/files",
-    "pages/loading/loading",
-    "pages/img/img",
-    "pages/appMusic/appMusic",
-    "pages/foru/foru",
-    "pages/explore/explore",
-    "pages/broadcast/broadcast",
-    "pages/search/search",
-    "pages/outfont/outfont",
-    "pages/baiduMusic/baiduMusic",
-    "pages/backgroundMusic/backgroundMusic",
-    "pages/RecorderManager/RecorderManager",
-    "pages/websocket/websocket",
-    "pages/chatrobot/chatrobot",
-    "pages/netApi/netApi",
-    "pages/function-demo/function-demo",
-    "pages/web-view/web-view",
-    "pages/open-data/opendata",
-    "pages/canvas/canvas",
-    "pages/tuya/tuya",
-    "pages/mapdemo/mapdemo",
-    "pages/txmap/txmap",
-    "pages/case/case",
-    "pages/camera/camera",
-    "pages/navigator/navigator",
-    "pages/personCenter/personCenter",
-
-    "pages/form/form",
-    "pages/progress/progress",
-    "pages/rich-text/rich-text",
-    "pages/list/list",
-    "pages/index/index",
-    "pages/case/photo"
-  ],
+  "workers": "workers",
+  "pages": ["pages/index/index"],
   "window": {
     "enablePullDownRefresh": true,
     "onReachBottomDistance": 100
   },
-  "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/QRcode/QRcode",
-        "text": "扫码"
-      },
-      {
-        "pagePath": "pages/code/code",
-        "text": "生成"
-      },
-      {
-        "pagePath": "pages/logs/logs",
-        "text": "历史"
-      }
-    ]
-  },
-  "debug": true,
   "style": "v2",
   "sitemapLocation": "sitemap.json",
   "requiredBackgroundModes": ["audio"]
