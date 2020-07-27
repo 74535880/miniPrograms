@@ -1,0 +1,71 @@
+"use strict";
+Page({
+    data: {
+        mapCtx: wx.createMapContext("my-map"),
+        longitude: 113.32452,
+        latitude: 23.099994,
+        markers: [
+            {
+                id: 1,
+                latitude: 23.099994,
+                longitude: 113.32452,
+                title: "T.T.T创意园",
+            },
+        ],
+    },
+    bindMarker: function (e) {
+        console.log(e);
+    },
+    onReady: function () { },
+    onShow: function () {
+        this.data.mapCtx = wx.createMapContext("my-map");
+    },
+    getPosition: function () {
+        this.data.mapCtx.getCenterLocation({
+            success: function (res) {
+                console.log(res);
+            },
+            fail: function (err) {
+                console.log(err);
+            },
+        });
+    },
+    getMovePosition: function () {
+        this.data.mapCtx.moveToLocation({
+            success: function (res) {
+                console.log(res);
+            },
+        });
+    },
+    translaterMarker: function () {
+        this.data.mapCtx.translateMarker({
+            markerId: 1,
+            autoRotate: true,
+            rotate: 0,
+            duration: 2000,
+            destination: {
+                latitude: 23.10229,
+                longitude: 113.3245211,
+            },
+            animationEnd: function () {
+                console.log("end");
+            },
+        });
+    },
+    zoomPosition: function () {
+        this.data.mapCtx.includePoints({
+            points: [
+                {
+                    latitude: 23.10229,
+                    longitude: 113.3345211,
+                },
+                {
+                    latitude: 23.00229,
+                    longitude: 113.3345211,
+                },
+            ],
+            padding: [10],
+        });
+    },
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFwZGVtby5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm1hcGRlbW8udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLElBQUksQ0FBQztJQUNILElBQUksRUFBRTtRQUNKLE1BQU0sRUFBRSxFQUFFLENBQUMsZ0JBQWdCLENBQUMsUUFBUSxDQUFDO1FBQ3JDLFNBQVMsRUFBRSxTQUFTO1FBQ3BCLFFBQVEsRUFBRSxTQUFTO1FBQ25CLE9BQU8sRUFBRTtZQUNQO2dCQUNFLEVBQUUsRUFBRSxDQUFDO2dCQUNMLFFBQVEsRUFBRSxTQUFTO2dCQUNuQixTQUFTLEVBQUUsU0FBUztnQkFDcEIsS0FBSyxFQUFFLFVBQVU7YUFDbEI7U0FDRjtLQUNGO0lBQ0QsVUFBVSxZQUFDLENBQU07UUFDZixPQUFPLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQyxDQUFDO0lBQ2pCLENBQUM7SUFDRCxPQUFPLGdCQUFJLENBQUM7SUFDWixNQUFNO1FBQ0osSUFBSSxDQUFDLElBQUksQ0FBQyxNQUFNLEdBQUcsRUFBRSxDQUFDLGdCQUFnQixDQUFDLFFBQVEsQ0FBQyxDQUFDO0lBQ25ELENBQUM7SUFJRCxXQUFXO1FBQ1QsSUFBSSxDQUFDLElBQUksQ0FBQyxNQUFNLENBQUMsaUJBQWlCLENBQUM7WUFDakMsT0FBTyxFQUFFLFVBQUMsR0FBRztnQkFDWCxPQUFPLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FBQyxDQUFDO1lBQ25CLENBQUM7WUFDRCxJQUFJLEVBQUUsVUFBQyxHQUFHO2dCQUNSLE9BQU8sQ0FBQyxHQUFHLENBQUMsR0FBRyxDQUFDLENBQUM7WUFDbkIsQ0FBQztTQUNGLENBQUMsQ0FBQztJQUNMLENBQUM7SUFJRCxlQUFlO1FBQ2IsSUFBSSxDQUFDLElBQUksQ0FBQyxNQUFNLENBQUMsY0FBYyxDQUFDO1lBQzlCLE9BQU8sRUFBRSxVQUFDLEdBQUc7Z0JBQ1gsT0FBTyxDQUFDLEdBQUcsQ0FBQyxHQUFHLENBQUMsQ0FBQztZQUNuQixDQUFDO1NBQ0YsQ0FBQyxDQUFDO0lBQ0wsQ0FBQztJQUlELGdCQUFnQjtRQUNkLElBQUksQ0FBQyxJQUFJLENBQUMsTUFBTSxDQUFDLGVBQWUsQ0FBQztZQUMvQixRQUFRLEVBQUUsQ0FBQztZQUNYLFVBQVUsRUFBRSxJQUFJO1lBQ2hCLE1BQU0sRUFBRSxDQUFDO1lBQ1QsUUFBUSxFQUFFLElBQUk7WUFDZCxXQUFXLEVBQUU7Z0JBQ1gsUUFBUSxFQUFFLFFBQVE7Z0JBQ2xCLFNBQVMsRUFBRSxXQUFXO2FBQ3ZCO1lBRUQsWUFBWTtnQkFDVixPQUFPLENBQUMsR0FBRyxDQUFDLEtBQUssQ0FBQyxDQUFDO1lBQ3JCLENBQUM7U0FDRixDQUFDLENBQUM7SUFDTCxDQUFDO0lBQ0QsWUFBWTtRQUNWLElBQUksQ0FBQyxJQUFJLENBQUMsTUFBTSxDQUFDLGFBQWEsQ0FBQztZQUM3QixNQUFNLEVBQUU7Z0JBQ047b0JBQ0UsUUFBUSxFQUFFLFFBQVE7b0JBQ2xCLFNBQVMsRUFBRSxXQUFXO2lCQUN2QjtnQkFDRDtvQkFDRSxRQUFRLEVBQUUsUUFBUTtvQkFDbEIsU0FBUyxFQUFFLFdBQVc7aUJBQ3ZCO2FBQ0Y7WUFDRCxPQUFPLEVBQUUsQ0FBQyxFQUFFLENBQUM7U0FDZCxDQUFDLENBQUM7SUFDTCxDQUFDO0NBQ0YsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiUGFnZSh7XG4gIGRhdGE6IHtcbiAgICBtYXBDdHg6IHd4LmNyZWF0ZU1hcENvbnRleHQoXCJteS1tYXBcIiksXG4gICAgbG9uZ2l0dWRlOiAxMTMuMzI0NTIsXG4gICAgbGF0aXR1ZGU6IDIzLjA5OTk5NCxcbiAgICBtYXJrZXJzOiBbXG4gICAgICB7XG4gICAgICAgIGlkOiAxLFxuICAgICAgICBsYXRpdHVkZTogMjMuMDk5OTk0LFxuICAgICAgICBsb25naXR1ZGU6IDExMy4zMjQ1MixcbiAgICAgICAgdGl0bGU6IFwiVC5ULlTliJvmhI/lm61cIixcbiAgICAgIH0sXG4gICAgXSxcbiAgfSxcbiAgYmluZE1hcmtlcihlOiBhbnkpIHtcbiAgICBjb25zb2xlLmxvZyhlKTtcbiAgfSxcbiAgb25SZWFkeSgpIHt9LFxuICBvblNob3coKSB7XG4gICAgdGhpcy5kYXRhLm1hcEN0eCA9IHd4LmNyZWF0ZU1hcENvbnRleHQoXCJteS1tYXBcIik7XG4gIH0sXG4gIC8qKlxuICAgKiDojrflj5blvZPliY3op4blm77nmoTkuK3lv4PngrnkvY3nva5cbiAgICovXG4gIGdldFBvc2l0aW9uKCkge1xuICAgIHRoaXMuZGF0YS5tYXBDdHguZ2V0Q2VudGVyTG9jYXRpb24oe1xuICAgICAgc3VjY2VzczogKHJlcykgPT4ge1xuICAgICAgICBjb25zb2xlLmxvZyhyZXMpO1xuICAgICAgfSxcbiAgICAgIGZhaWw6IChlcnIpID0+IHtcbiAgICAgICAgY29uc29sZS5sb2coZXJyKTtcbiAgICAgIH0sXG4gICAgfSk7XG4gIH0sXG4gIC8qKlxuICAgKiDnm7TmjqXljrvmn5DkuKrkvY3nva7miJbmmK/lvZPliY3kvY3nva7nmoTlpKfmpoLkvY3nva5cbiAgICovXG4gIGdldE1vdmVQb3NpdGlvbigpIHtcbiAgICB0aGlzLmRhdGEubWFwQ3R4Lm1vdmVUb0xvY2F0aW9uKHtcbiAgICAgIHN1Y2Nlc3M6IChyZXMpID0+IHtcbiAgICAgICAgY29uc29sZS5sb2cocmVzKTtcbiAgICAgIH0sXG4gICAgfSk7XG4gIH0sXG4gIC8qKlxuICAgKiDnp7vliqjmoIfms6hcbiAgICovXG4gIHRyYW5zbGF0ZXJNYXJrZXIoKSB7XG4gICAgdGhpcy5kYXRhLm1hcEN0eC50cmFuc2xhdGVNYXJrZXIoe1xuICAgICAgbWFya2VySWQ6IDEsXG4gICAgICBhdXRvUm90YXRlOiB0cnVlLFxuICAgICAgcm90YXRlOiAwLFxuICAgICAgZHVyYXRpb246IDIwMDAsXG4gICAgICBkZXN0aW5hdGlvbjoge1xuICAgICAgICBsYXRpdHVkZTogMjMuMTAyMjksXG4gICAgICAgIGxvbmdpdHVkZTogMTEzLjMyNDUyMTEsXG4gICAgICB9LFxuICAgICAgLy8gICDnp7vliqjlrozmiJDkuYvlkI7nmoTlm57osINcbiAgICAgIGFuaW1hdGlvbkVuZCgpIHtcbiAgICAgICAgY29uc29sZS5sb2coXCJlbmRcIik7XG4gICAgICB9LFxuICAgIH0pO1xuICB9LFxuICB6b29tUG9zaXRpb24oKSB7XG4gICAgdGhpcy5kYXRhLm1hcEN0eC5pbmNsdWRlUG9pbnRzKHtcbiAgICAgIHBvaW50czogW1xuICAgICAgICB7XG4gICAgICAgICAgbGF0aXR1ZGU6IDIzLjEwMjI5LFxuICAgICAgICAgIGxvbmdpdHVkZTogMTEzLjMzNDUyMTEsXG4gICAgICAgIH0sXG4gICAgICAgIHtcbiAgICAgICAgICBsYXRpdHVkZTogMjMuMDAyMjksXG4gICAgICAgICAgbG9uZ2l0dWRlOiAxMTMuMzM0NTIxMSxcbiAgICAgICAgfSxcbiAgICAgIF0sXG4gICAgICBwYWRkaW5nOiBbMTBdLFxuICAgIH0pO1xuICB9LFxufSk7XG4iXX0=

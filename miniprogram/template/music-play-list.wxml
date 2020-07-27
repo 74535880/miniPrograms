@@ -1,0 +1,28 @@
+<template name="music-play-list">
+	<view class="music-play-list">
+		<view class="music-play-list-item">
+			<image
+			 class="music-play-list-img"
+			 src="https://i.pinimg.com/236x/9d/59/25/9d5925718eb0b886aa95bd955e96d275.jpg"
+			 mode="scaleToFill"
+			 lazy-load
+			/>
+			<view class="music-play-list-text">
+				<text>最近播放</text>
+			</view>
+		</view>
+
+		<view class="music-play-list-item">
+			<image
+			 class="music-play-list-img"
+			 src="https://i.pinimg.com/236x/9d/59/25/9d5925718eb0b886aa95bd955e96d275.jpg"
+			 mode="scaleToFill"
+			 lazy-load
+			/>
+			<view class="music-play-list-text">
+				<text>最近播放</text>
+			</view>
+		</view>
+	</view>
+</template>
+

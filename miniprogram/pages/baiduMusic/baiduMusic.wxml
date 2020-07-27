@@ -1,0 +1,10 @@
+<view class="container">
+	<image
+	 class=""
+	 src="{{}}"
+	 mode="scaleToFill"
+	 lazy-load
+	/>
+	<test id="{{id}}" />
+</view>
+

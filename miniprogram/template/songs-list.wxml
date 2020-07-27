@@ -1,0 +1,23 @@
+<template name="songs-list">
+	<view class="songs-list">
+		<view wx:for="{{templateData}}" class="songs-item" wx:key="id">
+			<image
+			 class="songs-img"
+			 src="{{item.imgUrl}}"
+			 mode="scaleToFill"
+			 lazy-load
+			/>
+			<view class="songs-info">
+				<text>{{item.name}}</text>
+				<text>{{item.singer}}</text>
+			</view>
+			<image
+			 class="songs-action-button"
+			 src=""
+			 mode="scaleToFill"
+			 lazy-load
+			/>
+		</view>
+	</view>
+</template>
+

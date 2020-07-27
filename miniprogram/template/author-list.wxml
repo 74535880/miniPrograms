@@ -1,0 +1,16 @@
+<template name="author-list">
+	<view class="author-list">
+		<view class="author-item" wx:for="{{templateData}}">
+			<image
+			 class="item.imgUrl"
+			 src="{{item.imgUrl}}"
+			 mode="scaleToFill"
+			 lazy-load
+			/>
+			<view class="single">
+				<text>{{item.single}}</text>
+			</view>
+		</view>
+	</view>
+</template>
+

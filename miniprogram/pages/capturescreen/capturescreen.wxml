@@ -1,0 +1,6 @@
+<view class="container">
+    <view class="page-section">
+        <view class="user">{{userCapturescreen}}</view>
+        <button bind:tap="setTitle">设置标题导航栏</button>
+    </view>
+</view>

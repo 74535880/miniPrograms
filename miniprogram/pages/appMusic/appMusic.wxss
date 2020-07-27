@@ -1,0 +1,115 @@
+/* pages/appMusic/appMusic.wxss */
+
+.container {
+  align-items: flex-start;
+}
+.music-category-text {
+  font-size: 40rpx;
+  line-height: 30rpx;
+}
+.big-photo-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.big-photo-item {
+  width: 280rpx;
+  display: flex;
+  flex-direction: column;
+  padding: 5rpx 0;
+}
+.photo {
+  width: 280rpx;
+  height: 280rpx;
+  border-radius: 10rpx;
+  background: #aaa;
+  -webkit-border-radius: 10rpx;
+  -moz-border-radius: 10rpx;
+  -ms-border-radius: 10rpx;
+  -o-border-radius: 10rpx;
+}
+.music-name {
+  font-size: 24rpx;
+  line-height: 32rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.music-author {
+  font-size: 20rpx;
+  color: #929292;
+  line-height: 32rpx;
+}
+
+.music-group-selector {
+  display: flex;
+  justify-content: center;
+  margin: 10rpx 0;
+  align-items: center;
+}
+.music-group-selector-text {
+  font-size: 40rpx;
+}
+.music-group-selector-arrow {
+  width: 28rpx;
+  height: 28rpx;
+}
+/* music-play-list start */
+
+.music-play-list {
+  display: flex;
+  flex-direction: column;
+}
+.music-play-list-item {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1rpx solid #eee;
+  padding: 10rpx 0;
+}
+.music-play-list-img {
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+  -moz-border-radius: 10rpx;
+  -ms-border-radius: 10rpx;
+  -o-border-radius: 10rpx;
+}
+.music-play-list-text {
+  padding: 0 20rpx;
+}
+.songs-list {
+}
+.songs-item {
+  display: flex;
+  align-items: center;
+  margin-top: 30rpx;
+  padding: 10rpx 0;
+}
+.songs-img {
+  width: 280rpx;
+  height: 280rpx;
+  border-radius: 20rpx;
+  -webkit-border-radius: 20rpx;
+  -moz-border-radius: 20rpx;
+  -ms-border-radius: 20rpx;
+  -o-border-radius: 20rpx;
+}
+.songs-info {
+  margin: 0 50rpx;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.songs-action-button {
+  width: 200rpx;
+  height: 80rpx;
+  background-color: #008c8c;
+  border-radius: 20rpx;
+}

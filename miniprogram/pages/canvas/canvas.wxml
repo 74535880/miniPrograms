@@ -1,0 +1,16 @@
+<view class="container">
+    <!-- 画布区域 -->
+    <view class="canvas-area">
+        <!-- 同一个页面的canvasid不可重复 -->
+        <canvas bindtouchmove="touchMove" bindtouchend="touchEnd" bindtouchstart="touchStart" disable-scroll="{{false}}" id="my-canvas" class="my-canvas" />
+    </view>
+    <!-- 画布工具区域 -->
+    <view class="canvas-tools">
+        <!-- 细笔的绘制 -->
+        <view></view>
+        <!-- 粗笔的绘制 -->
+        <view></view>
+        <view></view>
+        <view></view>
+    </view>
+</view>

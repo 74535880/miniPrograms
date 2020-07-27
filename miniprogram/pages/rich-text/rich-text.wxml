@@ -3,7 +3,9 @@
     <view>rich-text富文本控件 nodes=String</view>
     <rich-text class="" nodes="{{richString}}"></rich-text>
 </view>
+<!-- 就是相当于把数组解析成html， -->
 <view>
     <view>rich-text富文本控件 nodes=数据绑定的数组形式</view>
     <rich-text nodes="{{nodesArray}}"></rich-text>
 </view>
+<!-- 这是一个小功能，就是把html同wxml联系起来。可以加载html，本身不能写html，不是解析 -->

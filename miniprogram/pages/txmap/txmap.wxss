@@ -1,0 +1,9 @@
+/* pages/txmap/txmap.wxss */
+#my-map {
+  width: 100%;
+  height: 800rpx;
+}
+.img {
+  width: 100rpx;
+  height: 100rpx;
+}

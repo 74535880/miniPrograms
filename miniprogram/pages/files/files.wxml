@@ -1,0 +1,5 @@
+<view class="container">
+    <button bind:tap="saveFile">保存文件</button>
+    <button bind:tap="removeSavedFile">删除本地缓存文件</button>
+    <button bind:tap="getSaveFileList">获取该小程序下已经保存的本地缓存文件列表</button>
+</view>

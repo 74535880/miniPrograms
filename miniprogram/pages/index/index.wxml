@@ -1,7 +1,6 @@
 <!-- index.wxml -->
-<view class="wrapper">
-  <text class="name">name{{name}}</text>
-  <text class="age">age{{age}}</text>
-
-  稻盛和夫似懂非懂开放后
+<view class="wrapper">{{storageInputVal}}</view>
+<view class="" hover-class="none" hover-stop-propagation="false">{{otherStorage}}</view>
+<view>
+  <text>{{a}}</text>
 </view>

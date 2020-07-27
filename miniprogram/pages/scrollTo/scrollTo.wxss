@@ -1,0 +1,21 @@
+page {
+  height: 1600rpx;
+  background: #008c8c;
+  font-size: 80rpx;
+}
+.container {
+  text-align: center;
+  font-weight: bolder;
+}
+.go-top {
+  position: fixed;
+  bottom: 50rpx;
+  right: 50rpx;
+  border-radius: 30rpx;
+  background: #7c7c7c;
+  color: #fff;
+  -webkit-border-radius: 30rpx;
+  -moz-border-radius: 30rpx;
+  -ms-border-radius: 30rpx;
+  -o-border-radius: 30rpx;
+}

@@ -1,0 +1,7 @@
+"use strict";
+Page({
+    bindmessage: function (e) {
+        console.log(e);
+    },
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoid2ViLXZpZXcuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJ3ZWItdmlldy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEsSUFBSSxDQUFDO0lBS0gsV0FBVyxZQUFDLENBQU07UUFDaEIsT0FBTyxDQUFDLEdBQUcsQ0FBQyxDQUFDLENBQUMsQ0FBQztJQUNqQixDQUFDO0NBQ0YsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiUGFnZSh7XG4gIC8qKlxuICAgKiDov5nkuKrmlrnlvI/mnInkupvmiYvmnLrlj5HpgIHnmoTkuJzopb/msqHlip7ms5Xkvb/nlKhcbiAgICogQHBhcmFtIGVcbiAgICovXG4gIGJpbmRtZXNzYWdlKGU6IGFueSkge1xuICAgIGNvbnNvbGUubG9nKGUpO1xuICB9LFxufSk7XG4iXX0=

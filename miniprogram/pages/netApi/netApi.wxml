@@ -1,0 +1,26 @@
+<button bind:tap="request">request</button>
+<button bind:tap="requestAbort">请求终止</button>
+<button bind:tap="onHeaderReceived">监听文件</button>
+<button bind:tap="downLoadFile">下载文件</button>
+<progress
+ class=""
+ percent="{{precent}}"
+ show-info
+ stroke-width="6"
+ color="#09BB07"
+ active="{{true}}"
+ activeColor="#f40"
+ active-mode="backwards"
+/>
+<!-- <image src="{{imgpath}}" mode="widthFix" lazy-load /> -->
+<button bind:tap="uploadFile">上传文件</button>
+
+<image
+ class=""
+ src="{{uploadImage}}"
+ mode="widthFix"
+ lazy-load
+ binderror=""
+ bindload=""
+/>
+

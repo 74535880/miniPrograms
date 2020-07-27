@@ -1,0 +1,7 @@
+<view class="wrapper">
+    <camera class="camera-ph" mode="normal" device-position="front" flash="auto" scan-area="[,,,]" bindstop="" binderror="">
+        <view class="main-tips">photo</view>
+        <image class="verfycode-cover" src="https://static.runoob.com/images/demo/demo2.jpg" mode="scaleToFill" lazy-load binderror=""></image>
+        <button type="primary" class="btn" bind:tap="takephoto">拍照</button>
+    </camera>
+</view>

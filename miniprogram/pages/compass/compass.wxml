@@ -1,0 +1,9 @@
+<view class="container">
+    <view>
+        <text></text>
+        <text></text>
+    </view>
+    <view>
+        <image class="" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    </view>
+</view>

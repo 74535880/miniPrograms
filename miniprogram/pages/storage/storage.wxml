@@ -1,0 +1,15 @@
+<view>
+    <button bind:tap="setStorage">设置缓存</button>
+    <button bind:tap="removeStorage">移除缓存</button>
+    <button bind:tap="getStorageInfo">获取当前缓存里面的数据信息</button>
+</view>
+<view class="btn-area">
+    <navigator class="nav" target="self" url="/pages/index/index" open-type="navigate">
+        跳转到一个新的页面
+    </navigator>
+    <view class="section">
+        <input bindblur="bindBlur" class="input" type="text" placeholder="请输入信息" value="{{val}}" />
+        <button bind:tap="navigator">跳转到index页面</button>
+    </view>
+    <navigator class="" target="self" url="/pages/index/index?a=1&b=2"  open-type="navigate">跳转到 index</navigator>
+</view>

@@ -1,0 +1,15 @@
+<!-- ios仅仅支持https格式文件地址 -->
+<!-- 如果引入中文，体积过大 -->
+<view class="wrapper">
+    <view class="page-body">
+        <view class="page-section">
+            <view class="page-body-info" class="{{loaded?'font-loaded':'font-not-loaded'}}">
+                <text wx:if="{{!loaded}}">Load font</text>
+                <text wx:else>{{fontFamily}}font is loaded</text>
+            </view>
+        </view>
+        <view>
+            <button bind:tap="getfont" type="primary">加载字体</button>
+        </view>
+    </view>
+</view>

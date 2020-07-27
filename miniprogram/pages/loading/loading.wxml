@@ -1,0 +1,12 @@
+<view class="body-view">
+    <loading hidden="{{hidden}}" bindchange="loadingChange">加载中...</loading>
+    <button type="default" bindtap="loadingTap">点击弹出loading</button>
+</view>
+<view class="page-section">
+    <view>showToast</view>
+    <button bind:tap="getShowTost">点击弹出showToast</button>
+</view>
+<!-- toast是不需要用户操作的，loading是需要作者的一些操作或者，其他的。 -->
+
+
+<view><button bind:tap="showModal">显示模态对话框</button></view>

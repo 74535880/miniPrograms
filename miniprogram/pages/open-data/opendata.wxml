@@ -1,0 +1,22 @@
+<!-- 用于展示用户的一些信息 -->
+<view>
+    <open-data class="" type="userNickName" open-gid="" />
+</view>
+<view>
+    <open-data class="" type="userAvatarUrl" open-gid="" />
+</view>
+<view>
+    <open-data class="" type="userGender" lang="zh_CN" open-gid="" />
+</view>
+<view>
+    <open-data class="" type="userCity" lang="zh_CN" open-gid="" />
+</view>
+<view>
+    <open-data class="" type="userProvince" lang="zh_CN" open-gid="" />
+</view>
+<view>
+    <open-data class="" type="userCountry" lang="zh_CN" open-gid="" />
+</view>
+<view>
+    <open-data class="" type="userLanguage" lang="zh_CN" open-gid="" />
+</view>

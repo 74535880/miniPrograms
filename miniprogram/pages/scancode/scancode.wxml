@@ -1,0 +1,4 @@
+<view class="container">
+    <button bind:tap="scanCode">点击扫码</button>
+    <image class="img" src="{{}}" mode="aspectFit" lazy-load />
+</view>

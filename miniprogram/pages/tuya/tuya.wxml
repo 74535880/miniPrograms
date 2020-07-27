@@ -1,0 +1,24 @@
+<view class="container" disable-scroll="{{false}}">
+	<view class="canvas_area">
+		<canvas
+		 class="my-canvas"
+		 canvas-id="my-canvas"
+		 bindtouchstart="touchStart"
+		 bindtouchmove="touchMove"
+		 bindtouchend="touchEnd"
+		 bindtouchcancel=""
+		 bindlongtap=""
+		 binderror=""
+		/>
+	</view>
+	<view class="canvas-tools">
+		<!-- 细笔 -->
+		<view class="box box1" bind:tap="penSelect" data-param="5" />
+		<!-- 粗笔 -->
+		<view class="box box2" bind:tap="penSelect" data-param="15" />
+		<!-- 颜色 -->
+		<view class="box box3" bind:tap="colorSelect" data-color="#cc0033" />
+		<view class="box box4" bind:tap="colorSelect" data-color="#ff9900" />
+	</view>
+</view>
+

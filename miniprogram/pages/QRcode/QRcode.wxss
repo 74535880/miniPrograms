@@ -1,0 +1,15 @@
+.scanResult {
+  padding-top: 50rpx;
+}
+
+.scanResult text {
+  /* 在恰当的地方单词换行 */
+  word-break: break-all;
+}
+
+.scanResult button {
+  display: inline-block;
+}
+.page_bd_spacing {
+  margin-top: 50rpx;
+}

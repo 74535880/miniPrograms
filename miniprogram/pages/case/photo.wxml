@@ -1,0 +1,3 @@
+<image class="img" src="{{photo}}" mode="scaleToFill" lazy-load></image>
+<view class="photo">{{photo}}</view>
+这是photo界面

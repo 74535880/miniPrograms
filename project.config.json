@@ -9,8 +9,8 @@
 	"projectname": "demo-1",
 	"scripts": {
 		"beforeCompile": "npm run tsc",
-		"beforePreview": "",
-		"beforeUpload": ""
+		"beforePreview": "npm run tsc",
+		"beforeUpload": "npm run tsc"
 	},
 	"setting": {
 		"urlCheck": false,
@@ -22,7 +22,7 @@
 		"newFeature": false,
 		"coverView": true,
 		"nodeModules": false,
-		"autoAudits": false,
+		"autoAudits": true,
 		"showShadowRootInWxmlPanel": true,
 		"scopeDataCheck": false,
 		"uglifyFileName": false,
@@ -37,13 +37,46 @@
 		},
 		"bundle": true,
 		"useIsolateContext": true,
-		"useCompilerModule": false,
-		"userConfirmedUseCompilerModuleSwitch": false,
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": true,
 		"packNpmManually": false,
 		"packNpmRelationList": []
 	},
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"appid": "wxcf638159709201e8",
-	"condition": {}
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "pages/workOrder/workOrder",
+					"pathName": "pages/workOrder/workOrder",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
 }

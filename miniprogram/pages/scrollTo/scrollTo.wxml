@@ -1,0 +1,4 @@
+<view class="container">
+    <text>top</text>
+    <button class="go-top" hidden="{{!cangotop}}">回到顶部</button>
+</view>

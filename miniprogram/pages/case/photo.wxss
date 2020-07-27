@@ -1,0 +1,9 @@
+/* miniprogram/pages/case/photo.wxss */
+page {
+  width: 100%;
+  height: 100%;
+}
+.img {
+  width: 100%;
+  height: 100%;
+}

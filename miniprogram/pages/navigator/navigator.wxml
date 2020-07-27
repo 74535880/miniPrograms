@@ -1,0 +1,8 @@
+<!-- target是表示在什么环境中跳转，self就是本小程序之间的页面跳转，miniProgram就是其他小程序和本小程序之间跳转 -->
+<navigator version="release" class="" target="self" url="/pages/form/form" open-type="navigateBack">
+    跳转
+</navigator>
+<!-- switchTab 的url，只能在tabBar中定义后才能跳转 -->
+<navigator class="" target="self" url="/pages/form/form" open-type="switchTab">tabbar跳转</navigator>
+<button bind:tap="tabBarNavigator">tabBar的跳转</button>
+<button bind:tap="otherNavigator">其他类型的跳转</button>
